@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 55px;
+}
+
+.logo-img {
+    width: 120px;
+    margin-top: 1px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.nav-links a:hover {
+    color: #262626;
+    text-decoration: underline;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    align-items: flex-start;
+    margin: 5px;
+    padding: 6px;
+}
+
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: #262626;
+    margin: 5px;
+    align-items: flex-start;
+}
+
+
+/* mobile */
+@media all and (max-width:991px) {
+
+    /*ke scroll nakhore */
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        left: 0;
+        z-index: 999;
+        height: 100%;
+        top: 55px;
+        background-color: #e6e6e6;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo-img {
+        display: block !important;
+    }
+
+    .burger {
+        display: block;
+        z-index: 999;
+    }
+}
+
+/* to show the burger list */
+.nav-active {
+    display: flex;
+}
+
+/* toggle the burger */
+.burger-toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-toggle .line2 {
+    opacity: 0;
+}
+
+.burger-toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+
+@keyframes textComeIn {
+    0% {
+        padding-left: 70px;
+    }
+
+    90% {
+        padding-left: 5px;
+    }
+
+    100% {
+        padding-left: 0px;
+    }
+}
+
+.custom-slide11 {
+    position: relative;
+    overflow-y: hidden;
+
+}
+
+.slider-content {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: larger;
+    color: #fff;
+    animation: textComeIn 1s;
+    animation-delay: 0;
+    width: 50%;
+}
+
+.custom-img {
+    overflow-y: hidden;
+}
+
+.btn-shop {
+    color: #000;
+    background-color: #fff;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 7px;
+    font-weight: 600;
+}
+
+.btn-shop:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.custom-icons a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.custom-icons a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.custom-game {
+    overflow-y: hidden;
+    position: relative;
+}
+
+.game-content {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: larger;
+    color: #fff;
+    width: 50%;
+
+}
+
+.custom-covid {
+    height: 160px;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #e6e6e6;
+}
+
+.covid-content {
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.btn-learn {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-learn:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.custom-follow {
+    width: 10%;
+}
+
+.custom-follow-icons {
+    width: 30px;
+}
+
+.slider-bg {
+    position: relative;
+    z-index: 0;
+}
+
+.slider-content {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: larger;
+    color: #fff;
+    animation: textComeIn 1s;
+    animation-delay: 0;
+    width: 50%;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #616161;
+    font-size: 11px;
+}
+
+.footer-links:hover {
+    color: #616161;
+    text-decoration: underline;
+}
+
+.footer-h5 {
+    font-size: 15px;
+}
